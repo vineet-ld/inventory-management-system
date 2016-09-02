@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/phmis_new</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2dll.auto">update</property>
+        
+        <mapping class="com.neu.web.phmis.bean.EnterpriseBean"/>
+        <mapping class="com.neu.web.phmis.bean.RoleBean"/>
+        <mapping class="com.neu.web.phmis.bean.UserBean"/>
+        <mapping class="com.neu.web.phmis.bean.ProductBean"/>
+        <mapping class="com.neu.web.phmis.bean.MedicalStaffBean"/>
+        <mapping class="com.neu.web.phmis.bean.OperatingRoomBean"/>
+        <mapping class="com.neu.web.phmis.bean.SurgeryBean"/>
+        <mapping class="com.neu.web.phmis.bean.RequestBean"/>
+        <mapping class="com.neu.web.phmis.bean.SurgeryRequestBean"/>
+        <mapping class="com.neu.web.phmis.bean.DeviceRequestBean"/>
+        <mapping class="com.neu.web.phmis.bean.OrderBean"/>
+        <mapping class="com.neu.web.phmis.bean.OrderItemBean"/>
+        <mapping class="com.neu.web.phmis.bean.InventoryItemBean"/>
+    
+    </session-factory>
+</hibernate-configuration>
